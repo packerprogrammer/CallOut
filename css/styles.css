@@ -1,0 +1,214 @@
+/****************************************************************************
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.;lk;kl
+ ***************************************************************************/
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#top
+{
+    /* center contents */
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#middle
+{
+    /* center contents */
+    text-align: center;
+    
+}
+
+#middle .nav
+{
+    display: inline-block;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+
+    /* center contents */
+    text-align: center;
+}
+
+#crew
+{
+    width:700px;
+    margin: auto;
+}
+
+#response
+{
+    width: 500px;
+    margin-top: 20px;
+    clear: both;
+    margin: auto;
+    text-align: left;
+}
+#reason
+{
+    width: 500px;
+    margin-top: 20px;
+    clear: both;
+    margin: auto;
+    text-align: left;
+}
+#toolbar
+{
+    text-align: left;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 500px;
+}
+input[type=radio] {
+    display: none;
+}
+input[type=radio] + label::before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 5px;
+    
+}
+input[type=radio]:checked + label::before {
+    background-color: #555;
+}
+
+
+
+.radio2 + label::before {
+    width: 0.75em;
+    height: 0.75em;
+}
+
+.radio3 + label::before {
+    width: 1em;
+    height: 1em;
+}
+
+label.response {
+    vertical-align: bottom;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px 16px 16px 0px;
+}
+select {
+    width: 220px;
+}
+
+#addcrewform
+{
+ z-index: 1;   
+ position:fixed;   
+ width:500px;
+ 
+ height:300px;
+ margin:30px auto 0;
+ left: 50%;
+ margin-left:-250px;
+ background-color:#585858;
+ border-radius:3px;
+ box-shadow:0px 0px 10px 0px #424242;
+ padding:10px;
+ box-sizing:border-box;
+ font-family:helvetica;
+ visibility:hidden;
+ display:none;
+}
+#addcrewform #close_login
+{
+    position: relative;
+    top: -285px;
+    left: 230px;
+    /* margin-left: 20%; */
+    /* left: 1150px; */
+    width: 15px;
+    height: 15px;
+}
+#addcrewform p
+{
+ margin-top:10px;
+ font-size:22px;
+ color:#E6E6E6;
+}
+#addcrewform #login
+{
+ width:250px;
+ height:40px;
+ border:2px solid silver;
+ border-radius:3px;
+ padding:5px;
+}
+#addcrewform #password
+{
+ margin-top:5px;
+ width:250px;
+ height:40px;
+ border:2px solid silver;
+ border-radius:3px;
+ padding:5px;
+}
+#loginform #dologin
+{
+ margin-left:-5px;
+ margin-top:10px;
+ width:250px;
+ height:40px;
+ border:none;
+ border-radius:3px;
+ color:#E6E6E6;
+ background-color:grey;
+ font-size:20px;
+}
